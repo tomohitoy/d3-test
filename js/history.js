@@ -134,21 +134,7 @@ var drawBargraph = function(dataset,selector,type){
 		.selectAll('text')
 		.data(dataset)
 		.text(function(d){
-			return d.year+'年';
-		})
-	svg.append('g')
-		.attr({
-			'class':'axis',
-			'transform':'translate(0,'+(h-margin.bottom)+')'
-		})
-		.call(xAxis)
-		.selectAll('text')
-		.data(dataset)
-		.text(function(d){
 			return d.month+'月'+d.day+'日';
-		})
-		.attr({
-			'dy':'20px'
 		});
 	svg.append('g')
 		.attr({
