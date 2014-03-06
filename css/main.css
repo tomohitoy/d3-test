@@ -1,0 +1,21 @@
+.centered {
+	float:none;
+	margin-left: auto; 
+	margin-right: auto;
+	position: relative;
+}
+
+.axis path,
+.axis line{
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font-size: 11px;
+}
+
+rect:hover {
+	fill: red;
+}

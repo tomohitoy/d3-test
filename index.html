@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>D3 Test Page</title>
+		<script src="js/jquery.js"></script>
+		<script src="js/d3.v3.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/history.js"></script>
+		<link href="css/main.css" media="screen" rel="stylesheet" />
+	</head>
+	<body>
+		<header></header>
+		<div id="main">
+			<h3>Test for D3.js</h3>
+			<p>Hello 1</p>
+			<div id="graph_area"></div>
+		</div>
+		<div id="description" class="centered">
+		</div>
+		<div id="tooltip" class="centered">
+			<p><strong><span id="year">1</span>年<span id="month">1</span>月<span id="day">1</span>日：<span id="value">100</span>回</strong></p>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				var dataset = [{"year":2014,"month":2,"day":24,"counter":4},{"year":2014,"month":2,"day":25,"counter":9},{"year":2014,"month":2,"day":26,"counter":0},{"year":2014,"month":2,"day":27,"counter":18},{"year":2014,"month":2,"day":28,"counter":0},{"year":2014,"month":3,"day":1,"counter":2},{"year":2014,"month":3,"day":2,"counter":19}];
+				drawBargraph(dataset,'#graph_area','トレーニング');
+			});
+		</script>
+		<footer></footer>
+	</body>
+</html>
