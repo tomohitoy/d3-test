@@ -5,6 +5,7 @@
 		<title>D3 Test Page</title>
 		<script src="js/jquery.js"></script>
 		<script src="js/d3.v3.js"></script>
+		<script src='js/d3.tip.js'></script>
 		<script src="js/main.js"></script>
 		<script src="js/history.js"></script>
 		<link href="css/main.css" media="screen" rel="stylesheet" />
@@ -23,8 +24,8 @@
 		</div>
 		<script type="text/javascript">
 			$(function(){
-				var dataset = [{"year":2014,"month":2,"day":24,"counter":4},{"year":2014,"month":2,"day":25,"counter":9},{"year":2014,"month":2,"day":26,"counter":0},{"year":2014,"month":2,"day":27,"counter":18},{"year":2014,"month":2,"day":28,"counter":0},{"year":2014,"month":3,"day":1,"counter":2},{"year":2014,"month":3,"day":2,"counter":19}];
-				drawBargraph(dataset,'#graph_area','トレーニング');
+				var dataset = [{"start_year":2014,"start_month":2,"start_day":7,"end_year":2014,"end_month":2,"end_day":13,"summary":20,"correct":4,"percentile":0.2},{"start_year":2014,"start_month":2,"start_day":14,"end_year":2014,"end_month":2,"end_day":20,"summary":10,"correct":3,"percentile":0.3},{"start_year":2014,"start_month":2,"start_day":21,"end_year":2014,"end_month":2,"end_day":27,"summary":10,"correct":4,"percentile":0.4},{"start_year":2014,"start_month":2,"start_day":28,"end_year":2014,"end_month":3,"end_day":13,"summary":20,"correct":18,"percentile":0.9},{"start_year":2014,"start_month":3,"start_day":14,"end_year":2014,"end_month":3,"end_day":10,"summary":15,"correct":14,"percentile":0.933}];
+				drawPercentilegraph(dataset,'#graph_area');
 			});
 		</script>
 		<footer></footer>
